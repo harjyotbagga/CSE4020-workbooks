@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="duration <= 205.5\ngini = 0.498\nsamples = 7813\nvalue = [4122, 3691]", fillcolor="#fcf2ea"] ;
+1 [label="poutcome_success <= 0.5\ngini = 0.323\nsamples = 3171\nvalue = [2530, 641]", fillcolor="#eca16b"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="month_mar <= 0.5\ngini = 0.269\nsamples = 2966\nvalue = [2491, 475]", fillcolor="#ea995f"] ;
+1 -> 2 ;
+3 [label="gini = 0.246\nsamples = 2901\nvalue = [2484, 417]", fillcolor="#e9965a"] ;
+2 -> 3 ;
+4 [label="gini = 0.192\nsamples = 65\nvalue = [7, 58]", fillcolor="#51a9e8"] ;
+2 -> 4 ;
+5 [label="duration <= 136.5\ngini = 0.308\nsamples = 205\nvalue = [39, 166]", fillcolor="#68b4eb"] ;
+1 -> 5 ;
+6 [label="gini = 0.482\nsamples = 69\nvalue = [28, 41]", fillcolor="#c0e0f7"] ;
+5 -> 6 ;
+7 [label="gini = 0.149\nsamples = 136\nvalue = [11, 125]", fillcolor="#4aa6e7"] ;
+5 -> 7 ;
+8 [label="duration <= 405.5\ngini = 0.451\nsamples = 4642\nvalue = [1592, 3050]", fillcolor="#a0d0f3"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="contact_unknown <= 0.5\ngini = 0.5\nsamples = 2233\nvalue = [1104, 1129]", fillcolor="#fbfdfe"] ;
+8 -> 9 ;
+10 [label="gini = 0.483\nsamples = 1868\nvalue = [760, 1108]", fillcolor="#c1e0f7"] ;
+9 -> 10 ;
+11 [label="gini = 0.108\nsamples = 365\nvalue = [344, 21]", fillcolor="#e78945"] ;
+9 -> 11 ;
+12 [label="duration <= 648.5\ngini = 0.323\nsamples = 2409\nvalue = [488, 1921]", fillcolor="#6bb6ec"] ;
+8 -> 12 ;
+13 [label="gini = 0.413\nsamples = 1100\nvalue = [321, 779]", fillcolor="#8bc5f0"] ;
+12 -> 13 ;
+14 [label="gini = 0.223\nsamples = 1309\nvalue = [167, 1142]", fillcolor="#56abe9"] ;
+12 -> 14 ;
+}
